@@ -1,0 +1,457 @@
+/***************start My framework*******/
+
+body{
+    background-color: gainsboro;
+}
+hr{
+    margin: auto;
+}
+.right-side{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+/************End Menu**********//*************************************************************/
+/*************************** NavBar *************************************/
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  right: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-inverse{
+    border: 0;
+}
+
+.navbar-content
+{
+    width:320px;
+    padding: 1%;
+    padding-bottom:0px;
+    background-color: gainsboro;
+}
+
+ul#main-menu li a#account,
+a#nav-brand,
+ul#home-page li a{
+    color: black;
+    margin-top: 2%;
+}
+#activ{
+    font-size: 18px;
+}
+ul#main-menu li a#account,
+ul#home-page li a{
+    font-size: 18px;
+}
+#profile{
+    width: 200px;
+    float: left;
+    
+}
+ul#main-menu li a#account{
+    padding: 1%;
+}
+#logout a{
+    color: black;
+    float: left;
+    font-size: 18px;
+    margin-right: 50px;
+}
+#logout a:hover{
+    color: #34CD8D;
+}
+
+ul#main-menu li:hover #sub_nav
+{
+    display:block;
+}
+.navbar-content:before, .navbar-content:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.navbar-nav.navbar-right:last-child {
+margin-right: 15px !important;
+}
+.navbar-footer 
+{
+    background-color:#DDD;
+}
+.navbar-footer-content { padding:15px 15px 15px 15px; }
+.dropdown-menu {
+padding: 0px;
+overflow: hidden;
+}
+.navbar-inverse{
+    background-color: white;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border: 0;
+}
+
+/****************************************************************/
+	nav.sidebar.navbar {
+		border-radius: 0px;
+	}
+    .navbar-inverse .navbar-brand{
+        color: white;
+        font-size: 20px;
+        
+    }
+
+	nav.sidebar{
+		-webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/* Add gap to nav and right windows.*/
+	
+
+	/* .....NavBar: Icon only with coloring/layout.....*/
+    /*small/medium side display*/
+    @media (min-width: 100px) {
+        .navbar-inverse .navbar-nav > li > a{
+            padding-bottom: 1%;
+            padding-top: 1%;
+        }
+        
+    }
+	/*small/medium side display*/
+	@media (min-width: 768px) {
+
+		/*Allow main to be next to Nav*/
+		.right-side{
+			position: absolute;
+			
+            height: 100%;/*keeps 100% minus nav size*/
+			float: right;
+		}
+
+		/*lets nav bar to be showed on mouseover*/
+		nav.sidebar:hover{
+			margin-left: 200px;
+		}
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 1px #e5e5e5 solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebar .navbar-nav > li{
+			border-bottom: 1px #e5e5e5 solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: #777;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebar{
+			width: 200px;
+			height: 100%;
+			margin-left: -160px;
+			float: left;
+			z-index: 8000;
+			margin-bottom: 0px;
+            border: 0;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		/* Move nav to full on mouse over*/
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}
+        nav.sidebar{
+            background-color: #34CD8D;
+            height: 100%;
+            font-size: 18px;
+        }
+        .navbar-inverse .navbar-nav > .active > a,
+        .navbar-inverse .navbar-nav > .active > a:hover,
+        .navbar-inverse .navbar-nav > .active > a:focus{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav > li > a{
+            color: white; 
+            padding-bottom: 17%;
+            padding-top: 17%;
+        }
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
+
+	@media (min-width: 1330px) {
+
+		/*Allow main to be next to Nav*/
+		
+
+		/*Show all nav*/
+		nav.sidebar{
+			margin-left: 0px;
+			float: left;
+		}
+		/*Show hidden items on nav*/
+		nav.sidebar .forAnimate{
+			opacity: 1;
+		}
+	}
+
+	nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #CCC;
+		background-color: transparent;
+	}
+
+	nav:hover .forAnimate{
+		opacity: 1;
+	}
+	section{
+		padding-left: 15px;
+	}
+    nav.sidebar{
+            background-color: #34CD8D;
+            font-size: 18px;
+            border: 0;
+        }
+    .nav li:hover{
+        background-color: white;
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus{
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-nav > li > a{
+            color: white; 
+        }
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:hover{
+            color: #34CD8D; 
+        }
+
+/*****************Start Project**************/
+
+
+/********************************************/
+
+
+
+
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+{
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+
+
+.fa .fa-calculator{
+width: 20px;
+height: 20px;
+}
+/***************** Content Div ********************************/
+div.row{
+     margin-right:0px;
+     margin-left: 0px;
+    background-color: gainsboro;
+}
+.yellow{
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+    text-align: center;
+    padding-top: 9%;
+    padding-left: 15%;
+    
+
+}
+/**********************form***************************/
+
+.form{
+    margin-left: 10%;
+    width: 90%;
+    border: 0 none #FFF;
+    overflow: auto;
+    outline:none;
+    padding-top: 3%;
+     
+}
+#full{
+    resize: none;
+}
+.form-group{
+    margin-left: 24%;
+    height: 100%;
+    width: 55%;
+    background-color: white;
+}
+#full2{
+     resize: none;
+ }
+.form-group{
+    margin-left: 24%;
+    height: 100%;
+    width: 55%;
+    background-color: white;
+}
+/***********************************************/
+
+@media only screen and (max-width: 525px) {
+    .imag{
+margin-right: 2%;
+}
+}
+
+/***********************************************/
+.post-group{
+    margin-left: 24%;
+    padding: 2%;
+    height: 100%;
+    width: 55%;
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+#comment-div{
+    display: none;
+}
+
+.menu1 ul{
+    list-style: none;
+    padding: 10px;
+
+}
+.menu1 li {
+    display: inline-block;
+    padding-right: 5%;
+    color:#4f5b69;
+    cursor: pointer;
+}
+.menu1 li:hover
+,.menu1 a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/***************************************** Send Button **********************************/
+.button {
+    width: 100px;
+    height: 40px;
+    font: 20px Arial;
+    font-weight: 100;
+    text-decoration: none;
+    background-color: #33EF8B;
+    color: black;
+    padding: 7px 6px 2px 6px;
+    cursor: pointer;
+  
+}
+
+@media only screen and (max-width: 490px) {
+    .button{
+        width: 200px;
+        
+    }
+}
+@media only screen and (max-width: 390px) {
+    .button{
+        width: 150px;
+        
+    }
+}
+@media only screen and (max-width: 290px) {
+    .button{
+        width: 100px;
+        
+    }
+}
+@media only screen and (max-width: 220px) {
+    .button{
+        width: 70px;
+        
+    }
+}
+.button:hover{
+    background-color: #34CD8D;
+}
+
+
+/*********************************** footer ********************/
+.footer a{
+    margin-right: 2%;
+    text-decoration: none;
+}
+.footer1{
+    margin-left: 15%;
+}
+/**************************** comment style *********************/
+#my-comment{
+    display: none;
+    width: 100%;
+    margin-top: 2px;
+}
+#-comment{
+    margin-left: 15%;
+}
+
+

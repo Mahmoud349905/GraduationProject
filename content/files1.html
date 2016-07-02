@@ -1,0 +1,100 @@
+
+<section style="background:#efefe9;">
+    <div class="container">
+        <div class="row">
+            <div class="board">
+                <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <div class="liner"></div>
+                        <li class="active">
+                            <a href="#files" data-toggle="tab" title="All Files">
+                      <span class="round-tabs one">
+                              <i class="fa fa-share-alt-square"></i>
+                      </span>
+                            </a></li>
+
+                        <li><a href="#update" data-toggle="tab" title="Update">
+                     <span class="round-tabs two">
+                         <i class="fa fa-upload"></i>
+                     </span>
+                        </a>
+                        </li>
+                        <li><a href="#search" data-toggle="tab" title="Search">
+                     <span class="round-tabs three">
+                          <i class="fa fa-search-plus"></i>
+                     </span> </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="files">
+
+                        <div class="alert-group">
+                            <div class="alert alert-success alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <i class="fa fa-file"></i>
+                                <strong>file 1</strong>
+
+                            </div>
+                            <div class="alert alert-info">
+                                <i class="fa fa-file"></i>
+                                <strong>file2</strong>
+
+                            </div>
+                            <div class="alert alert-warning alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <i class="fa fa-file"></i>
+                                <strong>file 4</strong>
+                            </div>
+                            <div class="alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                <i class="fa fa-file"></i>
+                                <strong>file5</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="update">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><strong>Upload Files</strong></div>
+                            <div class="panel-body">
+
+                                <!-- Standar Form -->
+                                <h4>Select files from your computer</h4>
+                                <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+                                    <div class="form-inline">
+                                        <div class="form-group">
+                                            <input type="file" name="files[]" id="js-upload-files" multiple>
+                                        </div>
+                                        <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit"><i
+                                                class="fa fa-upload"></i> Upload files
+                                        </button>
+                                    </div>
+                                </form>
+                                <div>
+                                    <textarea placeholder="file uploaded" rows="5" cols="50">
+
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="search">
+                        <div class="col-lg-12">
+                            <div class="input-group custom-search-form">
+                                <input id="search1" type="text" placeholder="Search">
+                                <input id="submit" type="submit" value="GO">
+
+                            </div><!-- /input-group -->
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
