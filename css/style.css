@@ -11,6 +11,9 @@ hr{
     height: 100%;
     background-color: antiquewhite;
 }
+.sidebar{
+    position: fixed;
+}
 
 /************End Menu**********//*************************************************************/
 /*************************** NavBar *************************************/
@@ -29,7 +32,7 @@ hr{
   padding-right: 0;
 }
 .navbar-wrapper .navbar {
-  padding-left: 15px;
+  padding-left: 15%;
   padding-right: 15px;
 }
 .navbar-inverse{
